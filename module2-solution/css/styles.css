@@ -1,0 +1,55 @@
+
+#chicken-title {
+    background-color: pink;
+}
+
+#beef-title {
+    background-color: red;
+}
+
+#sushi-title {
+    background-color: darkgoldenrod;
+}
+
+section {
+    border-style: solid;
+    background-color: grey;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/****************/
+/* MEDIA QUERIES*/
+/****************/
+
+@media (min-width:992px) {
+
+    h1 {
+        color: darkgreen;
+        font-size: 100px;
+        text-align: center;
+    }
+    
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    h1 {
+        color: red;
+        font-size: 100px;
+    }
+    
+    
+}
+
+@media (min-width:0px) and (max-width:767px) {
+
+    h1 {
+        color: blue;
+        font-size: 100px;
+    }
+    
+    
+}
