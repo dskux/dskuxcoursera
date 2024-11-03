@@ -1,21 +1,49 @@
 
-#chicken-title {
+div {
+    text-align: right;
+    
+}
+
+p {
+    clear: both;
+}
+p#chicken-title {
     background-color: pink;
+    float: right;
+    border: 2px black solid;
+    box-sizing: border-box;
+    font-size: 200%;
+    margin: 0;
+    margin-bottom: 2%;
 }
 
-#beef-title {
+p#beef-title {
     background-color: red;
+    float: right;
+    font-size: 200%;
+    margin: 0;
+    margin-bottom: 2%;
+    border: 2px black solid;
+    box-sizing: border-box;
+
 }
 
-#sushi-title {
+p#sushi-title {
     background-color: darkgoldenrod;
+    float: right;
+    font-size: 200%;
+    margin: 0;
+    margin-bottom: 2%;
+    border: 2px black solid;
+    box-sizing: border-box;
+
 }
 
 section {
     border-style: solid;
     background-color: grey;
     margin: 10px;
-    padding: 10px;
+    padding: 0%;
 }
 
 
@@ -23,6 +51,7 @@ section {
 /* MEDIA QUERIES*/
 /****************/
 
+/* Desktop */ 
 @media (min-width:992px) {
 
     h1 {
@@ -30,9 +59,16 @@ section {
         font-size: 100px;
         text-align: center;
     }
+
+    section {
+        float:left;
+        width: 30%;
+    }
     
 
 }
+
+/* Tablet */ 
 
 @media (min-width:768px) and (max-width:991px) {
 
@@ -40,16 +76,45 @@ section {
         color: red;
         font-size: 100px;
     }
-    
-    
+
+    section#chicken {
+        width:40%;
+        float: left;
+
+    }
+
+    section#beef {
+        width:40%;
+        float: right;
+    }
+
+    section#sushi {
+        clear:both;
+    }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+/* Mobile*/ 
+
+@media (min-width:1px) and (max-width:767px) {
 
     h1 {
         color: blue;
         font-size: 100px;
+        text-align: center;
     }
     
+    section#chicken {
+        float: left;
+
+    }
+
+    section#beef {
+        float: left;
+        clear: both;
+    }
+
+    section#sushi {
+        clear:both;
+    }
     
 }
