@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 div {
     text-align: right;
@@ -10,9 +13,9 @@ p {
 p#chicken-title {
     background-color: pink;
     float: right;
-    border: 2px black solid;
+    border: 1px black solid;
     box-sizing: border-box;
-    font-size: 200%;
+    font-size: 125%;
     margin: 0;
     margin-bottom: 2%;
 }
@@ -20,10 +23,10 @@ p#chicken-title {
 p#beef-title {
     background-color: red;
     float: right;
-    font-size: 200%;
+    font-size: 125%;
     margin: 0;
     margin-bottom: 2%;
-    border: 2px black solid;
+    border: 1px black solid;
     box-sizing: border-box;
 
 }
@@ -31,10 +34,10 @@ p#beef-title {
 p#sushi-title {
     background-color: darkgoldenrod;
     float: right;
-    font-size: 200%;
+    font-size: 125%;
     margin: 0;
     margin-bottom: 2%;
-    border: 2px black solid;
+    border: 1px black solid;
     box-sizing: border-box;
 
 }
@@ -44,6 +47,8 @@ section {
     background-color: grey;
     margin: 10px;
     padding: 0%;
+    border: 1px black solid;
+
 }
 
 
@@ -55,8 +60,7 @@ section {
 @media (min-width:992px) {
 
     h1 {
-        color: darkgreen;
-        font-size: 100px;
+        font-size: 175%;
         text-align: center;
     }
 
@@ -65,6 +69,9 @@ section {
         width: 30%;
     }
     
+    section#chicken {
+        margin-left: 3%;
+    }
 
 }
 
@@ -73,19 +80,22 @@ section {
 @media (min-width:768px) and (max-width:991px) {
 
     h1 {
-        color: red;
-        font-size: 100px;
+        font-size: 175%;
+        text-align: center;
     }
 
     section#chicken {
-        width:40%;
+        width:47%;
         float: left;
+        box-sizing: border-box;
 
     }
 
     section#beef {
-        width:40%;
+        width:47%;
         float: right;
+        box-sizing: border-box;
+
     }
 
     section#sushi {
@@ -98,8 +108,7 @@ section {
 @media (min-width:1px) and (max-width:767px) {
 
     h1 {
-        color: blue;
-        font-size: 100px;
+        font-size: 175%;
         text-align: center;
     }
     
